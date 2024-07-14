@@ -15,9 +15,9 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6427124758:-lcvi11tlOts9MUE')
+API_ID = int(environ.get('API_ID', '5929089'))
+API_HASH = environ.get('API_HASH', '4c188a365d111e459c450333ecfba021'')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5614432630:AAEcYIB74yLHA1EmRMefRrbD19h7wlFgfLw')
 
 PICS = (environ.get('PICS', 'https://graph.org/file/2518d4eb8c88f8f669f4c.jpg https://graph.org/file/d6d9d9b8d2dc779c49572.jpg https://graph.org/file/4b04eaad1e75e13e6dc08.jpg https://graph.org/file/05066f124a4ac500f8d91.jpg https://graph.org/file/2c64ed483c8fcf2bab7dd.jpg')).split() #SAMPLE PIC
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/208ae1ffacc082167dbc4.jpg')
@@ -29,7 +29,7 @@ USERNAME = environ.get('USERNAME', "https://telegram.me/cosmic_freak")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movie7xchat')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://freakboy:freakboy@cluster0.qhvex0i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
@@ -43,8 +43,8 @@ DEEP_API = environ.get("DEEP_API", "3ac9b077-654f-45c6-a1f0-a04a5ef6b69e")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
 AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
-DATABASE_NAME = environ.get('DATABASE_NAME', "public")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "momzgo")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'momzgo')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001868871195'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001868871195'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001868871195'))
